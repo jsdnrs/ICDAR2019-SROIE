@@ -74,7 +74,7 @@ from torchvision.utils import draw_bounding_boxes
 from torchvision.transforms.functional import pil_to_tensor, to_pil_image
 
 # The recommended method of loading this dataset is from Hugging Face
-dataset = load_dataset("jsdnrs/SROIE2019", split="all")
+dataset = load_dataset("jsdnrs/ICDAR2019-SROIE", split="all")
 
 # However, the dataset can be loaded offline using the "imagefolder" loader
 # once the images are downloaded (see below)
