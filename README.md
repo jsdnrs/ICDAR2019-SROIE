@@ -5,6 +5,8 @@
     Analysis and Recognition (ICDAR2019) Robust Reading Challenge on Scanned
     Receipts OCR and Information Extraction (SROIE).
     <br />
+    <a href="https://huggingface.co/datasets/jsdnrs/ICDAR2019-SROIE/viewer"><strong>Explore the dataset »</strong></a>
+    <br />
     <br />
     <a href="https://huggingface.co/datasets/jsdnrs/ICDAR2019-SROIE">
       <img src="https://huggingface.co/datasets/huggingface/badges/resolve/main/dataset-on-hf-xl-dark.svg" alt="Dataset on HF" />
@@ -12,28 +14,42 @@
   </p>
 </div>
 
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#about-the-project">About The Project</a></li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#using-the-dataset">Using the Dataset</a></li>
+        <li><a href="#loading-the-dataset-offline">Loading the Dataset Offline</a></li>
+      </ul>
+    </li>
+    <li><a href="#modifications-to-the-dataset">Modifications to the Dataset</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
+
 
 ## About The Project
 
-This project contains the processing code and dataset for an extension of the original ICDAR2019 SROIE dataset, including the following changes/additions:
+This project contains an extension of the [15th International Conference on
+Document Analysis and Recognition (ICDAR2019) Robust Reading Challenge on
+Scanned Receipts OCR and Information Extraction
+(SROIE)](https://rrc.cvc.uab.es/?ch=13) dataset originally published by Huang et
+al., 2019.
+
+This extended ICDAR2019 SROIE dataset includes the following improvements:
 
 * Integrated with Hugging Face's `datasets` format
 * Addition of 14 extracted texts missing from the Task 3 test dataset covering
   key information extraction
 * Corrections and improvements to the original dataset (see [Modifications to the Dataset](#modifications-to-the-dataset))
 
-The dataset card and distribution (Parquet-format) can be found on Hugging Face:
-https://huggingface.co/datasets/jsdnrs/ICDAR2019-SROIE
-
-<iframe
-  src="https://huggingface.co/datasets/jsdnrs/ICDAR2019-SROIE/embed/viewer/default/train"
-  frameborder="0"  width="100%"  height="560px">
-</iframe>
-
-The ICDAR2019 SROIE dataset was originally published by Huang et al. for the
-[15th International Conference on Document Analysis and Recognition (ICDAR2019)
-Robust Reading Challenge on Scanned Receipts OCR and Information Extraction
-(SROIE)](https://rrc.cvc.uab.es/?ch=13).
+The dataset is hosted and distribution on Hugging Face, where the Dataset Card provides detailed information on the dataset (also available in `DATASET.md`):
+* https://huggingface.co/datasets/jsdnrs/ICDAR2019-SROIE
 
 
 ## Getting Started
@@ -46,11 +62,10 @@ Install the required Python packages:
 python3 -m pip install datasets torch torchvision
 ```
 
-### Using this Dataset
+### Using the Dataset
 
-You can load and visualize the dataset either directly from Hugging Face
-(recommended) or offline (see [Loading Dataset
-Offline](#loading-dataset-offline) below).
+You can load the dataset either directly from Hugging Face (recommended) or
+offline (see [Loading the Dataset Offline](#loading-the-dataset-offline) below).
 
 ```python
 import torch
@@ -92,7 +107,7 @@ Example output:
   <img src="assets/ex.jpg" alt="Annotated receipt image" style="width: 250px; margin: auto; display: block;">
 </div>
 
-### Loading Dataset Offline
+### Loading the Dataset Offline
 
 If you want to work with the dataset locally:
 
@@ -148,4 +163,4 @@ Distributed under the [Creative Commons Attribution 4.0 International License
 
 ## Acknowledgments
 
-TODO: Add acknowledgements to other existing datasets.
+TODO: Add acknowledgments to other existing datasets.
