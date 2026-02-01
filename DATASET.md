@@ -158,7 +158,7 @@ The following figure shows the receipt `image` from the above example with the
 bounding boxes overlaid in red using `torchvision`:
 
 <div style="text-align: center;">
-  <img src="./assets/ex.jpg" alt="Receipt image with overlaid bounding boxes"
+  <img src="https://huggingface.co/datasets/jsdnrs/ICDAR2019-SROIE/resolve/main/assets/ex.jpg" alt="Receipt image with overlaid bounding boxes"
     style="width: 250px; margin: auto; display: block;">
 </div>
 
